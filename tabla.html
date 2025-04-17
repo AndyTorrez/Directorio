@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Directorio | Tabla</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/tabla.css">
+    <script src="js/tabla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <form id="datosFila">
+        <div class="fila" id="dato1">
+            <label class="datoFila"> 1</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato2">
+            <label class="datoFila"> 2</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato3">
+            <label class="datoFila"> 3</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato4">
+            <label class="datoFila"> 4</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato5">
+            <label class="datoFila"> 5</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato6">
+            <label class="datoFila"> 6</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato7">
+            <label class="datoFila"> 7</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato8">
+            <label class="datoFila"> 8</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato9">
+            <label class="datoFila">9</label> <input class="dato" type="text">
+        </div>
+        <div class="fila" id="dato10">
+            <label class="datoFila">10</label> <input class="dato" type="text">
+        </div>
+    </form>
+
+    <button id="obtenerDatos" onclick="agregarDatos();">Agregar</button>
+
+    <div class="divisor">
+    <label id="nombreDirectorio"></label>
+    </div>
+
+    <table class="directorio" id="miDirectorio"></table>
+
+    <div class="divisor">
+
+    <button id="eliminarFila" onclick="eliminarFila()">Eliminar</button>
+
+    <button id="guardarTabla" onclick="guardarTabla()">Guardar</button>
+
+    <button id="salir" onclick="salir()">Salir</button>
+    
+    </div>
+
+</body>
+</html>
